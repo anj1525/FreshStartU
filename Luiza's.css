@@ -83,3 +83,13 @@ h1, h2, h3 {
   img:hover {
     border-color: #333;
   }
+
+  #arrow {
+    position: absolute; 
+    top: 110px; 
+    left:340px; 
+    width: 30px; 
+    height: 30px;
+    border-radius: none; 
+    border: none;
+  }
