@@ -84,7 +84,16 @@ h1, h2, h3 {
     border-color: #333;
   }
 
-  #arrow {
+  #leftArrow {
+    position: absolute;
+    top: 110px;
+    left: 140;
+    width: 30px;
+    height: 30px;
+    border-radius: none;
+    border: none;
+  }
+  #rightArrow {
     position: absolute; 
     top: 110px; 
     left:340px; 
@@ -93,3 +102,5 @@ h1, h2, h3 {
     border-radius: none; 
     border: none;
   }
+
+
