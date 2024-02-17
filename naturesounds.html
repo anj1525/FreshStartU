@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nature Relaxation</title>
+<link rel="stylesheet" type="text/css" href="naturesounds.css">
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .sound-block {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  .sound-block img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h1>Immerse yourself with the sounds of nature</h1>
+
+<div class="sound-block">
+  <img src="Images/avenue-815297_1280.jpg" alt="Forest" onclick="playSound('Music/rainforest.mp3')">
+  <p>Forest</p>
+</div>
+
+<div class="sound-block">
+  <img src="Images/waves-3473335_1280.jpg" alt="Ocean" onclick="playSound('Music/ocean.mp3')">
+  <p>Ocean</p>
+</div>
+
+<div class="sound-block">
+  <img src="Images/bird-2295431_1280.jpg" alt="Birds" onclick="playSound('Music/birds.mp3')">
+  <p>Birds</p>
+</div>
+
+<div class="sound-block">
+  <img src="Images/bird-2295431_1280.jpg" alt="Wind" onclick="playSound('Music/wind.mp3')">
+  <p>Wind</p>
+</div>
+
+<script>
+  function playSound(soundFile) {
+    var audio = new Audio(soundFile);
+    audio.play();
+  }
+</script>
+
+</body>
+</html>
