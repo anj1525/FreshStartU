@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checklist</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <h1>Checklist</h1>
+    <ul id="checklist">
+    </ul>
+
+    <button onclick="addItem()">Add Item</button>
+
+<script>
+    function addItem() {
+        var newItemText = prompt("Enter new item text:");
+        if (newItemText) {
+            var checklist = document.getElementById("checklist");
+            var li = document.createElement("li");
+            var checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            var label = document.createElement("label");
+            label.textContent = newItemText;
+            var editButton = document.createElement("button");
+            editButton.textContent = "Edit";
+            editButton.setAttribute("onclick", "editItem(this)");
+            var deleteButton = document.createElement("button");
+            deleteButton.textContent = "Delete";
+            deleteButton.setAttribute("onclick", "deleteItem(this)");
+            li.appendChild(checkbox);
+            li.appendChild(label);
+            li.appendChild(editButton);
+            li.appendChild(deleteButton);
+            checklist.appendChild(li);
+            saveToLocalStorage();
+        }
+    }
+
+    function editItem(button) {
+        var li = button.parentNode;
+        var label = li.querySelector("label");
+        var newText = prompt("Edit item text:", label.textContent);
+        if (newText !== null) {
+            label.textContent = newText;
+            saveToLocalStorage();
+        }
+    }
+
+    function deleteItem(button) {
+        var li = button.parentNode;
+        li.parentNode.removeChild(li);
+        saveToLocalStorage();
+    }
+
+    function saveToLocalStorage() {
+        var checklistItems = document.querySelectorAll("#checklist li label");
+        var itemsArray = [];
+        checklistItems.forEach(function(item) {
+            itemsArray.push(item.textContent);
+        });
+        localStorage.setItem("checklistItems", JSON.stringify(itemsArray));
+    }
+
+    function loadFromLocalStorage() {
+        var storedItems = localStorage.getItem("checklistItems");
+        if (storedItems) {
+            var itemsArray = JSON.parse(storedItems);
+            var checklist = document.getElementById("checklist");
+            itemsArray.forEach(function(itemText) {
+                var li = document.createElement("li");
+                var checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                var label = document.createElement("label");
+                label.textContent = itemText;
+                var editButton = document.createElement("button");
+                editButton.textContent = "Edit";
+                editButton.setAttribute("onclick", "editItem(this)");
+                var deleteButton = document.createElement("button");
+                deleteButton.textContent = "Delete";
+                deleteButton.setAttribute("onclick", "deleteItem(this)");
+                li.appendChild(checkbox);
+                li.appendChild(label);
+                li.appendChild(editButton);
+                li.appendChild(deleteButton);
+                checklist.appendChild(li);
+            });
+        }
+    }
+
+    // Load checklist items from localStorage when the page loads
+    loadFromLocalStorage();
+</script>
+
+</body>
+</html>
