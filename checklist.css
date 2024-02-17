@@ -8,26 +8,6 @@ body {
   justify-items: center;
   padding: 0.75rem;
 }
-
-/* Navigation Styles */
-.main-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.main-nav li {
-    margin-left: 0px;
-}
-
-.main-nav a {
-    color: inherit;
-    text-decoration: none;
-    padding: 1rem;
-}
-
-.main-nav a:hover {
-    color: #A578A5;
-}
   
 
 *,

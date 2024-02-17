@@ -4,26 +4,6 @@ body {
     padding: 0;
     background-color: #F4E1CA;
   }
-
-/* Navigation Styles */
-.main-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.main-nav li {
-    margin-left: 0px;
-}
-
-.main-nav a {
-    color: inherit;
-    text-decoration: none;
-    padding: 1rem;
-}
-
-.main-nav a:hover {
-    color: #546a4c;
-}
   
   h1 {
     text-align: center;
