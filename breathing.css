@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: F4E1CA;
+    background-color: #F4E1CA;
 }
 
 .container {
@@ -16,14 +16,19 @@ body {
     position: relative;
     width: 200px;
     height: 200px;
+    color: white;
+
 }
 
 .circle {
     width: 100%;
     height: 100%;
-    background-color: pink;  
+    background-color: #97af8f;  
     border-radius: 50%;
     animation-fill-mode: forwards;
+    border: 2px solid #546a4c;
+
+
 }
 
 .message {
@@ -53,11 +58,11 @@ body {
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
+    margin-top: 60px;
+    padding: 20px 20px;
     font-size: 18px;
-    background-color: lightblue;  
-    border: none;
+    background-color: #97af8f;  
+    border: 2px solid #546a4c;
     border-radius: 5px;
     color: white;
     cursor: pointer;
@@ -65,5 +70,38 @@ button {
 }
 
 button:hover {
-    background-color: blue;  
+    background-color: #546a4c;  
+}
+
+/* Navigation Styles */
+.main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; /* Set left to 0 to extend the navigation bar across the entire width */
+    background-color: #97af8f;
+    z-index: 9999;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    margin-left: 0px;
+}
+
+.main-nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.main-nav a:hover {
+    background-color: black;
+    color: white;
 }

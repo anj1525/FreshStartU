@@ -22,7 +22,7 @@ body {
 }
 
 .main-nav a:hover {
-    color: #A578A5;
+    color: #546a4c;
 }
   
   h1 {
@@ -40,12 +40,12 @@ body {
     height: 200px;
     cursor: pointer;
     border-radius: 50%; /* Makes the images circular */
-    border: 2px solid #ccc; /* Adds a border around the images */
+    border: 2px solid #77966D; /* Adds a border around the images */
     transition: border-color 0.3s ease; /* Adds a smooth transition effect */
   }
   
   .sound-block img:hover {
-    border-color: #333; /* Changes border color on hover */
+    border-color: #546a4c; /* Changes border color on hover */
   }
   
   .sound-block p {
