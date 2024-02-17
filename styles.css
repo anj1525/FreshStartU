@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap');
 
 /* Navigation Styles */
 .main-nav {
+    font-family: Inknut Antiqua, sans-serif;
     position: fixed;
     top: 0;
     right: 0;

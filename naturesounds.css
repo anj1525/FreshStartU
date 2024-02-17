@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+   font-family: Inknut Antiqua, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #F4E1CA;
@@ -7,6 +7,7 @@ body {
   
   h1 {
     text-align: center;
+    margin-top: 150px;
   }
   
   .sound-block {
@@ -16,8 +17,8 @@ body {
   }
   
   .sound-block img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
     border-radius: 50%; /* Makes the images circular */
     border: 2px solid #77966D; /* Adds a border around the images */
