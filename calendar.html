@@ -4,45 +4,101 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 
 <head>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="naturesounds.html">Nature Sounds</a></li>
+            <li><a href="Courseschedule.html">Course schedule</a></li>
+            <li><a href="checklist.html">Checklist</a></li>
+            <li><a href="groundingexercises.html">Grounding Exercises</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="breathing.html">Breathing Exercises</a></li>
+        </ul>
+    </nav>
+
     <script>
-    function myFunction() {
-      document.getElementById("one").innerHTML = "hello";
+    function oneChange() {
+      document.getElementById("one").innerHTML = "Done!";
     }
+
+    function twoChange() {
+      document.getElementById("two").innerHTML = "Done!";
+    }
+
+    function threeChange() {
+      document.getElementById("three").innerHTML = "Done!";
+    }
+
+    function fourChange() {
+      document.getElementById("four").innerHTML = "Done!"; 
+    }
+
+    function fiveChange() {
+      document.getElementById("five").innerHTML = "Done!"; 
+    }
+
+    function sixChange() {
+      document.getElementById("six").innerHTML = "Done!"; 
+    }
+
+    function sevenChange() {
+      document.getElementById("seven").innerHTML = "Done!"; 
+    }
+
+
     </script>
     </head>
 
 <body>
 
-<h1>Calendar</h1>
-<h2>Important Dates</h2>
+<h1 style="position: absolute; top: 100px;">Calendar</h1>
 
 <table>
     <tr>
-      <th style="position:absolute; left:250px;">Sunday</th>
-      <th style="position:absolute; left:360px;">Monday</th>
-      <th style="position:absolute; left:470px">Tuesday</th>
-      <th style="position:absolute; right:600px;">Wednesday</th>
-      <th style="position:absolute; right:480px;">Thursday</th>
-      <th style="position:absolute; right:380px;">Friday</th>
-      <th style="position:absolute; right:270px;">Saturday</th>
+      <th style="position:absolute; top: 200px; left:250px;">Sunday</th>
+      <th style="position:absolute; top: 200px; left:360px;">Monday</th>
+      <th style="position:absolute; top: 200px; left:470px">Tuesday</th>
+      <th style="position:absolute; top: 200px; right:600px;">Wednesday</th>
+      <th style="position:absolute; top: 200px; right:480px;">Thursday</th>
+      <th style="position:absolute; top: 200px; right:380px;">Friday</th>
+      <th style="position:absolute; top: 200px; right:250px;">Saturday</th>
     </tr>
     <tr>
-      <td><button id="one"; type="button" onclick="myFunction()">1</button></td>
-      <td><button id="one"; type="button" onclick="myFunction()">2</button></td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
+      <td style="position:absolute; top: 240px; left:250px;"><button id="one"; type="button" onclick="oneChange()">1</button></td>
+      <td style="position:absolute; top: 240px; left:360px;"><button id="two"; type="button" onclick="twoChange()">2</button></td>
+      <td style="position:absolute; top: 240px; left:475px;"><button id="three"; type="button" onclick="threeChange()">3</button></td>
+      <td style="position:absolute; top: 240px; right:620px;"><button id="four"; type="button" onclick="fourChange()">4</button></td>
+      <td style="position:absolute; top: 240px; right:495px;"><button id="five"; type="button" onclick="fiveChange()">5</button></td>
+      <td style="position:absolute; top: 240px; right:380px;"><button id="six"; type="button" onclick="sixChange()">6</button></td>
+      <td style="position:absolute; top: 240px; right:260px;"><button id="seven"; type="button" onclick="sevenChange()">4</button></td>
     </tr>
     <tr>
-      <td>8</td>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-      <td>12</td>
-      <td>13</td>
-      <td>14</td>
+        <td style="position:absolute; top: 315px; left:250px;"><button id="eight"; type="button" onclick="eightChange()">8</button></td>
+        <td style="position:absolute; top: 315px; left:360px;"><button id="nine"; type="button" onclick="nineChange()">9</button></td>
+        <td style="position:absolute; top: 315px; left:475px;"><button id="ten"; type="button" onclick="tenChange()">10</button></td>
+        <td style="position:absolute; top: 315px; right:620px;"><button id="eleven"; type="button" onclick="elevenChange()">11</button></td>
+        <td style="position:absolute; top: 315px; right:495px;"><button id="twelve"; type="button" onclick="twelveChange()">12</button></td>
+        <td style="position:absolute; top: 315px; right:380px;"><button id="six"; type="button" onclick="thirteenChange()">13</button></td>
+        <td style="position:absolute; top: 315px; right:260px;"><button id="fourteen"; type="button" onclick="fourteenChange()">14</button></td>
+    </tr>
+    <tr>
+        <td style="position:absolute; top: 390px; left:250px;"><button id="fifteen"; type="button" onclick="fifteenChange()">15</button></td>
+        <td style="position:absolute; top: 390px; left:360px;"><button id="sixteen"; type="button" onclick="sixteenChange()">16</button></td>
+        <td style="position:absolute; top: 390px; left:475px;"><button id="seventeen"; type="button" onclick="seventeenChange()">17</button></td>
+        <td style="position:absolute; top: 390px; right:620px;"><button id="eighteen"; type="button" onclick="eighteennChange()">18</button></td>
+        <td style="position:absolute; top: 390px; right:495px;"><button id="nineteen"; type="button" onclick="nineteenChange()">19</button></td>
+        <td style="position:absolute; top: 390px; right:380px;"><button id="twenty"; type="button" onclick="twentyChange()">20</button></td>
+        <td style="position:absolute; top: 390px; right:260px;"><button id="twentyOne"; type="button" onclick="twentyOneChange()">21</button></td>
+    </tr>
+    <tr>
+        <td style="position:absolute; top: 470px; left:250px;"><button id="twentyTwo"; type="button" onclick="fifteenChange()">22</button></td>
+        <td style="position:absolute; top: 470px; left:360px;"><button id="twentyThree"; type="button" onclick="sixteenChange()">23</button></td>
+        <td style="position:absolute; top: 470px; left:475px;"><button id="twentyFour"; type="button" onclick="seventeenChange()">24</button></td>
+        <td style="position:absolute; top: 470px; right:620px;"><button id="twentyFive"; type="button" onclick="eighteennChange()">25</button></td>
+        <td style="position:absolute; top: 470px; right:495px;"><button id="twentySix"; type="button" onclick="nineteenChange()">26</button></td>
+        <td style="position:absolute; top: 470px; right:380px;"><button id="twentySeven"; type="button" onclick="twentyChange()">27</button></td>
+        <td style="position:absolute; top: 470px; right:260px;"><button id="twentyEight"; type="button" onclick="twentyOneChange()">28</button></td>
     </tr>
   </table>
 
