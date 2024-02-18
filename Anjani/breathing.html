@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cute Breathing Exercise</title>
+<link rel="stylesheet" type="text/css" href="breathing.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<header class="main-header"> 
+    <nav class="main-nav">
+        <ul>
+            <li><a href="mentalhealthhp.html">Home</a></li>
+            <li><a href="naturesounds.html">Nature Sounds</a></li>
+            <li><a href="Courseschedule.html">Course schedule</a></li>
+            <li><a href="checklist.html">Checklist</a></li>
+            <li><a href="groundingexercises.html">Grounding Exercises</a></li>
+            <li><a href="Calender.html">Calender</a></li>
+            <li><a href="breathing.html">Breathing Exercises</a></li>
+        </ul>
+    </nav>
+  </header>
+</head>
+<body>
+
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle" id="circle"></div>
+            <div class="message" id="message">Inhale</div>
+        </div>
+        <button onclick="startBreathing()">Start Breathing</button>
+    </div>
+
+<script>
+    function startBreathing() {
+        var circle = document.getElementById("circle");
+        var message = document.getElementById("message");
+        var duration = 300000; // 5 minutes in milliseconds
+        var breathInDuration = 4000; // Inhale and exhale duration
+        var totalBreaths = Math.floor(duration / (2 * breathInDuration)); // Total inhale-exhale pairs
+
+        // Function to perform one cycle of breathing
+        function breatheCycle() {
+            // Inhale animation
+            circle.style.animation = `breathe-in ${breathInDuration}ms ease-in-out forwards`;
+            message.textContent = "Inhale";
+
+            setTimeout(() => {
+                // Exhale animation
+                circle.style.animation = `breathe-out ${breathInDuration}ms ease-in-out forwards`;
+                message.textContent = "Exhale";
+
+                // If there are remaining breaths, perform the next cycle
+                if (totalBreaths > 1) {
+                    totalBreaths--;
+                    setTimeout(breatheCycle, breathInDuration);
+                } else {
+                    // Reset animation and message after all cycles
+                    setTimeout(() => {
+                        circle.style.animation = '';
+                        message.textContent = "Breathe";
+                    }, breathInDuration);
+                }
+            }, breathInDuration);
+        }
+
+        breatheCycle(); // Start the breathing cycles
+    }
+</script>
+
+</body>
+</html>
