@@ -75,7 +75,7 @@ h1, h2, h3 {
     width: 200px;
     height: 200px;
     cursor: pointer;
-    border-radius: 50%; 
+    border-radius: 0%; 
     border: 2px solid #ccc;
     transition: border-color 0.3s ease;
   }
@@ -100,5 +100,15 @@ h1, h2, h3 {
     width: 30px; 
     height: 30px;
     border-radius: none; 
+    border: none;
+  }
+
+  #leaves {
+    position: absolute;
+    top: 300px;
+    left: 140px;
+    width: 100px;
+    height: 130px;
+    border-radius: none;
     border: none;
   }
