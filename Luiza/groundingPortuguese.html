@@ -19,12 +19,24 @@
         </ul>
     </nav>
 
-    <script>audioElement.play();</script>
+    <script>
+        function playSound(soundFile) {
+          var audio = new Audio('C:\Users\luiza\OneDrive\Desktop\Code\ElleHack2024\Music\ocean.mp3');
+          audio.play();
+        }
+      </script>
     
 </head>
 
 <body>
     <h1>Grounding Exercise- Portuguese</h1>
-    <audio src="C:\Users\luiza\OneDrive\Desktop\Code\ElleHack2024\Music\ocean.mp3" autoplay></audio>
+    <button style="top:200px"; onclick="playAudio()">Play Video</button>
+
+    <div class="sound-block">
+        <img src="Images/avenue-815297_1280.jpg" onclick="playSound('C:\Users\luiza\OneDrive\Desktop\Code\ElleHack2024\Music\ocean.mp3')" style="position: absolute; top: 200px">
+        <p style="position: absolute; top: 250px">Click on the icon to start</p>
+      </div>
+
+    
 
 </body>
