@@ -9,14 +9,80 @@ body {
     z-index: 9999;
   }
 
-#tree {
-    height: 576px;
-    width: 324px;
+.header {
+    padding:70px;
+    text-align: center;
 }
-#frankie {
+.column {
+    float: left;
+    
+}
+#leaves2 {
+    position: absolute;
+    top: 100px;
+    right: 75px;
+    height: 140px;
+    width: 110px;
+}
+#leaves3 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    height: 140px;
+    width: 110px;
+}
+#leaves4 {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    height: 140px;
+    width: 110px;
+}
+#leaves5 {
+    position: absolute;
+    top: 100px;
+    right: 300px;
+    height: 140px;
+    width: 110px;
+}
+#leaves6 {
+    position: absolute;
+    top: 100px;
+    left: 75px;
+    height: 170px;
+    width: 110px;
+}
+#leaves7 {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    height: 140px;
+    width: 110px;
+}
+#tree {
+    position: absolute;
+    left: 20px;
+    top: 300px;
+    height: 500px;
+    width: 500px;
+}
+#frankiec {
+    position: sticky;
+
+    height: 200px;
+    width: 200px;
+}
+#frankiel {
+    position: absolute;
+    top: 100px;
+    left: 10px;
     height: 50px;
     width: 50px;
 }
-
-
-
+#frankier {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+}
