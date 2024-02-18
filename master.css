@@ -7,13 +7,15 @@ body {
     right: 0;
     left: 0; /* Set left to 0 to extend the navigation bar across the entire width */
     z-index: 9999;
-    padding-top: 4cm;
   }
 
 #tree {
-    margin-bottom: 30px;
     height: 576px;
     width: 324px;
+}
+#frankie {
+    height: 50px;
+    width: 50px;
 }
 
 
