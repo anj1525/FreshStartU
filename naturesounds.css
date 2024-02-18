@@ -17,8 +17,8 @@ body {
   }
   
   .sound-block img {
-    width: 150px;
-    height: 150px;
+    width: 330px;
+    height: 330px;
     cursor: pointer;
     border-radius: 50%; /* Makes the images circular */
     border: 2px solid #77966D; /* Adds a border around the images */

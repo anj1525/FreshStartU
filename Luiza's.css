@@ -102,3 +102,11 @@ h1, h2, h3 {
     border-radius: none; 
     border: none;
   }
+
+  #leaves {
+    position: absolute;
+    width: 100px;
+    height: 130px;
+    border-radius: none;
+    border: none;
+  }

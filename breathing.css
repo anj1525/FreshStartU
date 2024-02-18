@@ -73,3 +73,36 @@ button {
 button:hover {
     background-color: #546a4c;  
 }
+
+
+#leave_a {
+    position: fixed; 
+    top: 150px; 
+    right: 400px;  
+    height: 420px;
+    width: 220px;
+  }
+  
+  #leave_b {
+    position: fixed; 
+    top: 200px; 
+    left: 430px;  
+    height: 350px;
+    width: 150px;
+  }
+  
+  #leave_c {
+    position: fixed; 
+    top: 620px; 
+    right: 430px;  
+    height: 150px;
+    width: 150px;
+  }
+  
+  #leave_d {
+    position: fixed; 
+    top: 620px; 
+    left: 430px;  
+    height: 150px;
+    width: 150px;
+  }

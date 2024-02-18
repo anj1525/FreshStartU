@@ -5,21 +5,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Grounding Exercises- French</title>
 <link rel="stylesheet" type="text/css" href="Luiza's.css">
-<link rel="stylesheet" type="text/css" href="..\styles.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
 
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="naturesounds.html">Nature Sounds</a></li>
-            <li><a href="Courseschedule.html">Course schedule</a></li>
-            <li><a href="checklist.html">Checklist</a></li>
-            <li><a href="groundingexercises.html">Grounding Exercises</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="breathing.html">Breathing Exercises</a></li>
-        </ul>
-    </nav>
+<nav class="main-nav">
+    <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="naturesounds.html">Nature Sounds</a></li>
+        <li><a href="calendarSeptember.html">Calendar</a></li>
+        <li><a href="checklist.html">Checklist</a></li>
+        <li><a href="groundingExercises.html">Grounding Exercises</a></li>
+        <li><a href="breathing.html">Breathing Exercises</a></li>
+    </ul>
+</nav>
+
 </head>
 
 <body>
     <h1>Grounding Exercise- French</h1>
+    <img src=".\keeleyimage\hatfrankie.png" style="position:absolute; top:200px; left:520px; cursor:pointer" onclick="startPlayingFrench()">
+    <p style="position:absolute; top: 400px; left: 405px">Click on the icon to start the guided exercise audio.</p>
+    <p style="position:absolute; top: 430px; left: 525px">Click again to pause it.</p>
+
+    <audio  id="GroundingFrench" style="position: absolute; top: 300px; left:450px; visibility: hidden" controls autoplay>
+        <source src="./Grounding Recordings/Grounding French.mp3" type="audio/mp3">
+      </audio>
+    
+      <script>
+         const groundingFrench = document.getElementById('GroundingFrench');
+
+         let isPlaying = false;
+         
+        function startPlayingFrench() {
+            console.log("string", isPlaying);
+
+             if (isPlaying) {
+                groundingFrench.pause();
+                isPlaying = false;
+             } else {
+                groundingFrench.play();
+                isPlaying = true;
+             }
+        }
+
+    </script>
 </body>
