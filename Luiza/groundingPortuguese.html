@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Grounding Exercises- Portuguese</title>
 <link rel="stylesheet" type="text/css" href="Luiza's.css">
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="..\styles.css">
 
     <nav class="main-nav">
         <ul>
@@ -19,24 +19,37 @@
         </ul>
     </nav>
 
-    <script>
-        function playSound(soundFile) {
-          var audio = new Audio('C:\Users\luiza\OneDrive\Desktop\Code\ElleHack2024\Music\ocean.mp3');
-          audio.play();
-        }
-      </script>
+    
     
 </head>
 
 <body>
-    <h1>Grounding Exercise- Portuguese</h1>
-    <button style="top:200px"; onclick="playAudio()">Play Video</button>
+    <h1 style="position:absolute; top:200px; cursor:pointer" onclick="startPlayingPortuguese()">Grounding Exercise- Portuguese</h1>
 
-    <div class="sound-block">
-        <img src="Images/avenue-815297_1280.jpg" onclick="playSound('C:\Users\luiza\OneDrive\Desktop\Code\ElleHack2024\Music\ocean.mp3')" style="position: absolute; top: 200px">
-        <p style="position: absolute; top: 250px">Click on the icon to start</p>
-      </div>
+    <!-- <img src="\Luiza's Images\RightArrow - Copy.png" onclick="startPlayingPortuguese()"> -->
 
+
+      <audio  id="GroundingPortuguese" style="position: absolute; top: 300px; left:450px; visibility:hidden" controls autoplay>
+        <source src=".\Grounding Recordings\GroundingPortuguese.mp3" type="audio/mp3">
+      </audio>
     
+      <script>
+         const groundingPortuguese = document.getElementById('GroundingPortuguese');
+
+         let isPlaying = false;
+         
+        function startPlayingPortuguese() {
+
+             if (isPlaying) {
+                groundingPortuguese.pause();
+                isPlaying = false;
+             } else {
+                groundingPortuguese.play();
+                isPlaying = true;
+             }
+        }
+
+    </script>
+
 
 </body>
