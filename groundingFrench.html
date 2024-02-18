@@ -22,4 +22,30 @@
 
 <body>
     <h1>Grounding Exercise- French</h1>
+    <img src=".\keeleyimage\scarffrankie.png" style="position:absolute; top:200px; left:520px; cursor:pointer" onclick="startPlayingFrench()">
+    <p style="position:absolute; top: 400px; left: 405px">Click on the icon to start the guided exercise audio.</p>
+    <p style="position:absolute; top: 430px; left: 525px">Click again to pause it.</p>
+
+    <audio  id="GroundingFrench" style="position: absolute; top: 300px; left:450px; " controls autoplay>
+        <source src="./Grounding Recordings/GroundingEnglish.m4a" type="audio/m4a">
+      </audio>
+    
+      <script>
+         const groundingFrench = document.getElementById('GroundingFrench');
+
+         let isPlaying = false;
+         
+        function startPlayingFrench() {
+            console.log("string", isPlaying);
+
+             if (isPlaying) {
+                groundingFrench.pause();
+                isPlaying = false;
+             } else {
+                groundingFrench.play();
+                isPlaying = true;
+             }
+        }
+
+    </script>
 </body>
